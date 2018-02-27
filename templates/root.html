@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{#{%  block head %}#}
+{#    <a href="">?????</a>#}
+{#{% endblock %}#}
+{#{{ block.head }}#}
+<body>
+{% block  root%}
+<form action="/search" method="post">
+    啾一下<input type="text" name="search">
+    <input type="submit">
+        {% csrf_token %}
+</form>
+
+{% endblock %}
+
+</body>
+</html>

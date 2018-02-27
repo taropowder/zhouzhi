@@ -1,0 +1,253 @@
+body,div,img,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+input,img,button{border:0; outline: none; margin: 0; padding: 0;}
+ul,ol{list-style: none}
+fieldset, img, input,button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+input,button{padding-bottom: 0; padding-top: 0;}
+select,input,button{vertical-align:middle}
+textarea{resize: none;}
+img{border:0; vertical-align: middle;}
+table{border-collapse: collapse;}
+a{color: #666;text-decoration: none}
+
+#page1{
+    background: url("../images/back.jpg") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#page1 header{
+    width: 100%;
+    background-color: #e1e1e1;
+    position: fixed;
+    padding-left: 15px;
+    padding-right: 25px;
+    z-index: 99;
+    height: 40px;
+}
+#two span{color:#e5e5e5;text-decoration: none; text-shadow: none}
+#page1 #h1{
+    background:url("../images/back.jpg");
+    overflow: hidden;
+}
+#page1 .search{
+    background: url("../images/sj0.png");
+    width: 385px;
+    height: 171px;
+    margin: 40px auto 0;
+    position: relative;
+    z-index: 0;
+}
+#page1 #zc{
+    width: 60px;
+    height: 30px;
+    background-color: #3c3c3c;
+    border-radius: 25px;
+    color: #fff;
+    vertical-align:middle ;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index: 100;
+}
+#page1 #oA1{
+    width: 60px;
+    height: 30px;
+    background-color: #3c3c3c;
+    border-radius: 25px;
+    color: #fff;
+    vertical-align:middle ;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 100;
+}
+#page1 #tc{
+    width: 60px;
+    height: 30px;
+    background-color: #3c3c3c;
+    border-radius: 25px;
+    color: #fff;
+    vertical-align:middle ;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    z-index: 100;
+}
+#page1  .reci{
+    background: url("../images/sj1.png");
+    width: 385px;
+    height: 188px;
+    margin: -18px auto 0;
+    position: relative;
+    z-index: 1;
+}
+#page1  .reci button{
+    background: url("../images/sjrc.png");
+    width: 216px;
+    height: 29px;
+    position: absolute;
+    margin:0;
+    border: none;
+    overflow: hidden;
+    top: 133px;
+    left: 50%;
+    margin-left: -108px;
+    cursor: pointer;
+}
+.search #jiu{
+    background: url("../images/sjo01.png") no-repeat;
+    width: 165px;
+    height: 24px;
+    text-shadow: none;
+    box-shadow: none;
+    border-radius:0;
+    -webkit-box-shadow: none;
+    position: absolute;
+    left: 50%;
+    margin: 0 -105px;
+    top: 125px;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 24px;
+    font-size: 0.5em;
+    color: #8c8c8c;
+}
+#page1   #butjiu{
+    background: url("../images/sjo02.png");
+    width: 45px;
+    height: 24px;
+    position: absolute;
+    margin:0;
+    border: none;
+    overflow: hidden;
+    top: 125px;
+    left: 50%;
+    margin: 0 0 0 60px;
+    cursor: pointer;
+}
+#page2 h4{
+    color: #fff;
+}
+#page2 button{
+    width: 50px;
+}
+#dlt #one{
+    padding: 10px 20px;
+}
+#dlt #one{
+    padding: 10px 20px;
+}#dlt #two{
+     margin-top:20px;
+ }
+/*<!--登录弹出框开始-->*/
+.tan{
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    z-index: 1000;
+    margin-top: -150px;
+    margin-left: -156px;
+    background-color: #fefefe;
+    display: none;
+    border: 3px solid #b8d4ea;
+    border-radius: 15px;
+    padding-left: 12px;
+    padding-top: 20px;
+}
+.tan h4{
+    color: #6d6d6d;
+}
+.tan .dlb0{
+    width: 300px;
+    height: 45px;
+    background: url("../images/dl2.png")no-repeat;
+    margin: 10px 0 10px -2px;
+}
+.tan .dlb1{
+    width: 300px;
+    height: 45px;
+    background: url("../images/dl1.png")no-repeat;
+    margin: 10px 0 10px -2px;
+}
+
+.tan input{
+    padding-left: 18px;
+    font-family: "microsoft yahei";
+    font-size: 15px;
+    color: #b7b7b7;
+}
+.tan a{
+    display: block;
+    height: 33px;
+    margin-top: 27px;
+    font-size: 16px;padding-left: 5px;
+}
+.tan button{
+    margin-left: 200px;
+    margin-top: -75px;
+    width: 84px;
+    height: 33px;
+    background: url("../images/denglu.png")no-repeat;
+    cursor: pointer;
+}
+.tan span{
+    top: 8px;
+    right: 6px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-family: 宋体;
+    font-size: 25px;
+    cursor: pointer;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+/*<!--登录弹出框结束-->*/
+
+
+.wode{
+    background: url("../images/san.png");
+    width: 420px;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: -24px;
+    position: relative;
+    z-index: 2;
+}
+.wode button{
+    background: url("../images/sjgrzx.png");
+    width: 214px;
+    height: 25px;
+    position: absolute;
+    margin:0;
+    border: none;
+    overflow: hidden;
+    top: 182px;
+    left: 50%;
+    margin-left: -104px;
+    cursor: pointer;
+}

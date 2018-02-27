@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>这个问题</title>
+</head>
+<body>
+<a href="">link</a>
+{% block root %}<br>
+    <h1>这个问题是:{{ question }}</h1><br>
+    {% for list in answers %}
+{{ list }}<br>
+        {% empty %}
+        <li>抱歉暂时未接收到答案</li>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

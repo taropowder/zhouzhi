@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+    <title>周知</title>
+    <script>
+        if(IsPC()){
+            window.location = "../index.html";
+        }
+        function IsPC() {//判断是否是PC
+
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+    </script>
+    <link rel="stylesheet" href="my.css"/>
+    <script src="my.js"></script>
+</head>
+<body>
+
+
+<section id="page1" >
+    <header>
+        <button id="zc">注册</button>
+        <button id="oA1">登录</button>
+        <button id="tc">退出</button>
+    </header>
+
+
+    <div  id="content">
+        <!--第一个吊起来的-->
+        <div class="search" id="search">
+            <form>
+                <input type="text" value="啾一下就知道" id="jiu">
+                <button class="button" id="butjiu"></button>
+            </form>
+        </div>
+
+        <!--第二个吊起来的-->
+        <div class="reci" id="reci">
+            <button></button>
+        </div>
+
+
+        <!--第三个吊起来的-->
+        <div class="wode" id="wode">
+            <button></button>
+        </div>
+        <!--   弹出的页面1-->
+        <div class="mask" id="hui"></div>
+        <div class="tan" id="dlt">
+            <span id="guan">×</span>
+            <form>
+                <h4>   用户名：</h4>
+                <input type="text" value="请输入用户名或邮箱" id="yhm" class="dlb0" name="name">
+                <h4>   密码：</h4>
+                <input type="password" placeholder="请输入密码" id="mm" class="dlb0" name="password">
+                <a href="#">忘记密码</a>
+                <button></button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>

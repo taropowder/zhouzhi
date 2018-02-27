@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>周知注册</title>
+    <link rel="shortcut icon" href="/static/00.ico">
+    <link rel="stylesheet" href="/static/dlzc/my.css" type="text/css">
+{#    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>#}
+    <script src="/static/dlzc/my.js"></script>
+    <link media="all" rel="stylesheet" href="/static/css/all.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+	<script type="text/javascript" src="/static/star/js/jquery-stars.js"></script>
+	<script type="text/javascript" src="/static/star/js/smothscrool.js"></script>
+	<script type="text/javascript" src="/static/star/js/jquery.main.js"></script>
+{#	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/foundation.min.css">#}
+{#	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">#}
+{#	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">#}
+
+</head>
+<body id="example-rand">
+<div id="page1">
+    <img src="/static/images/zcback.jpg" width="100%" height="100%" style="position:absolute;left:0;top:0;z-index:-1">
+    <div id="kuang">
+        <h2>  &nbsp;&nbsp;&nbsp;&nbsp;注册</h2><br>
+        <form method="post" action="/register" id="bd" onsubmit="return check()">
+            <span id="span1"></span>
+            <h3>用户名：</h3>
+            <input name="name" type="text" id="name" onblur="checkName()" onfocus="focusName()">
+            <span id="span2"></span>
+            <h3>密码：</h3>
+            {% csrf_token %}
+            <input name="password" type="password" id="pass" onfocus="focusPass()" onblur="checkPass()">
+            <span id="span3"></span>
+            <input type="submit" id="zc" value="确定"></input>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+{% extends 'persion_base.html' %}
+
+{% block root %}
+<div id="myq">
+{% for list in anwsers %}
+{#<a href="/answer?question={{ list }}">{{ list }}</a> <br>#}
+        <div class="myq">
+    <h4> {{ list }}</h4><br>
+
+        <a href="#" class="ca">点击查看全部</a>
+    </div>
+{% endfor %}
+
+</div>
+{% endblock %}

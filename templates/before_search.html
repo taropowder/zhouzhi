@@ -1,0 +1,47 @@
+
+{% extends 'persion_base.html' %}
+
+{% block root %}
+    <div id="myq">
+    <!--第一个回答-->
+    <div class="mya">
+       <h1>您提出的问题是--------{{ content }}</h1>
+    </div>
+</div>
+    {% if old_questions %}
+    <div id="myq">
+    <!--第一个回答-->
+    <div class="mya">
+       <h1>下面的问答能否解决您的问题??</h1>
+                <h1>未找到相似问题?来啾一下吧</h1>
+        <form action="/search_after" method="post">
+            <input type="hidden" name="search" value="{{ content }}">
+              {% csrf_token %}
+            <input type="submit" value="啾">
+    </div>
+        </div>
+
+    {% else %}
+            <div id="myq">
+    <!--第一个回答-->
+    <div class="mya">
+       <h1>未曾找到相似问题,是否发动机器人提问?</h1>
+        <form action="/search_after" method="post">
+            <input type="hidden" name="search" value="{{ content }}">
+              {% csrf_token %}
+            <input type="submit" value="啾">
+        </form>
+    </div>
+        </div>
+    {% endif %}
+
+    {% for foo in old_questions %}
+        <div id="myq">
+    <div class="reci">
+      <a href="{% url "question_id" foo.1 %}"> <h1>{{ foo.0 }} </h1></a>
+    </div>
+</div>
+    {% endfor %}
+
+
+{% endblock %}

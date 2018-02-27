@@ -1,0 +1,88 @@
+#headerContainer {
+	margin-bottom: 100px !important;
+}
+
+#subtitleBreadcrumbsWrapper {
+	width: 500px !important;
+}
+
+.teamSortNavWrap span {
+	width: 61% !important;
+}
+
+.teamSort {
+	width: 36% !important;
+}
+
+.teamSort li.active a {
+	font-weight: 400 !important;
+}
+
+.servicesThumbImageFrame {
+	position: relative;
+}
+
+
+.servicesThumbImageContainer {
+	position: relative;
+}
+
+.servicesThumbImageContainer a span {
+	position: relative !important;
+}
+
+.servicesThumbImageContainer img {
+	position: relative;
+}
+
+.postImageContainer a span.featuredRollover {
+	behavior: none !important;
+}
+
+.commentAvatarContainer {
+	position: relative;
+}
+
+.commentAvatarFrame {
+	position: relative;
+}
+
+.commentAvatar img {
+	position: relative;
+}
+
+#commentForm input { 
+	position: relative;
+}
+
+#commentForm textarea {
+	position: relative;
+}
+
+.commentFormSubmitBtn {
+	z-index: 0;
+}
+
+.galleryItemsList li {
+ 	behavior: none !important;
+}
+
+.galleryItemsList3Col li {
+	behavior: none !important;
+}
+
+.galleryImageContainer a span.featuredRollover {
+	behavior: none !important;
+}
+
+.galleryImageContainer3col a span.featuredRollover {
+	behavior: none !important;
+}
+
+.sortNav li.active a {
+	font-weight: 400 !important;
+}
+
+.buttonAndSeparatorContact {
+	padding-top: 20px !important;
+}

@@ -1,0 +1,121 @@
+
+{% extends 'persion_base.html' %}
+
+{% block root %}
+<div id="myq">
+    <!--第一个问题开始-->
+{% for list in questions %}
+{#<a href="/answer?question={{ list }}">{{ list }}</a> <br>#}
+        <div class="myq">
+{# <a href="/answer?question={{ list.quesition }}"><h1>{{ list.quesition }}-------提问时间{{ list.time }} </h1></a>#}
+           <h4>  {{ list.quesition }}----------{{ list.time }}</h4>
+    {% for answer in list.answers %}
+         <p>
+         {% for a in answer %}
+             {{ a }}
+             {% endfor %}
+        </p>
+
+        {% endfor %}
+        <a href="{% url "question_id" list.id  %}" class="ca">点击查看原始数据</a>
+    </div>
+{% endfor %}
+
+</div>
+{% endblock %}
+<!--我的问题结束-->
+
+<!--我的回答开始-->
+<div id="mya">
+    <!--第一个回答-->
+    <div class="mya">
+        <h4>这里卖麻辣拌</h4><br>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;服务俗话nsf离开了就多少积分布洛芬vs打
+            击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务
+            俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离
+            开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬服务俗话nsf离开了就多少积分布洛芬vs打击
+            vs打击服务俗话nsf离开了就多少积分布洛芬vs打击腐败是vs打击腐败是否健康不irwwkbwrg为对方快捷键打开空间吧地方
+        </p>
+        <a href="#" class="ca">点击查看全部</a>
+    </div>
+
+    <!--第二个回答-->
+    <div class="mya">
+        <h4>这里卖煎饼</h4><br>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;服务俗话nsf离开了就多少积分布洛芬vs打
+            击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务
+            俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离
+            开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬服务俗话nsf离开了就多少积分布洛芬vs打击
+            vs打击服务俗话nsf离开了就多少积分布洛芬vs打击腐败是vs打击腐败是否健康不irwwkbwrg为对方快捷键打开空间吧地方
+        </p>
+        <a href="#" class="ca">点击查看全部</a>
+    </div>
+
+
+    <div class="mya">
+        <h4>这里卖煎饼</h4><br>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;服务俗话nsf离开了就多少积分布洛芬vs打
+            击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务
+            俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离
+            开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬服务俗话nsf离开了就多少积分布洛芬vs打击
+            vs打击服务俗话nsf离开了就多少积分布洛芬vs打击腐败是vs打击腐败是否健康不irwwkbwrg为对方快捷键打开空间吧地方
+        </p><br>
+        <a href="#" class="ca">点击查看全部</a>
+    </div>
+
+
+    <div class="mya">
+        <h4>这里卖煎饼</h4><br>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;服务俗话nsf离开了就多少积分布洛芬vs打
+            击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务
+            俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬vs打击服务俗话nsf离
+            开了就多少积分布洛芬vs打击服务俗话nsf离开了就多少积分布洛芬服务俗话nsf离开了就多少积分布洛芬vs打击
+            vs打击服务俗话nsf离开了就多少积分布洛芬vs打击腐败是vs打击腐败是否健康不irwwkbwrg为对方快捷键打开空间吧地方
+        </p><br>
+        <a href="#" class="ca">点击查看全部</a>
+    </div>
+
+
+</div>
+<!--我的回答结束-->
+
+
+<!--我的积分开始-->
+<div id="jifen">
+    <!--总金币开始-->
+    <div id="all">
+        <div id="ih">
+        <img src="/static/dlzc/images/jb.png" style="width: 60px;height: 60px">
+        <h3>我的Z币：100</h3>
+        </div>
+    </div>
+
+    <div class="jifen">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2017.11.7回答问题  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;+10</h2>
+        <img src="/static/dlzc/images/jjj.png" style="width: 30px;height: 30px">
+    </div>
+
+
+    <div class="jifen">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2017.11.7回答问题  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;+10</h2>
+        <img src="/static/dlzc/images/jjj.png" style="width: 28px;height: 28px">
+    </div>
+
+
+</div>
+<br><br><br>
+<p id="p1">感谢使用周知</p>
+</body>
+</html>

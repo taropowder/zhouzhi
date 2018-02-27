@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>周知</title>
+    <script>
+        if(!IsPC()){
+            window.location = "mobile/mm.html";
+        }
+        function IsPC() {//判断是否是PC
+
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+    </script>
+    <link rel="stylesheet" href="basic.css" type="text/css">
+    <link rel="shortcut icon" href="00.ico">
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="my.js"></script>
+</head>
+<div class="big">
+<body>
+<img src="images/nw.jpg" width="100%" height="1000px" style="position:absolute;left:0;top:0;z-index:-1">
+
+<!--登录弹出框开始-->
+<!--<div class="mask" id="hui"></div>-->
+<!--<div class="tan" id="dlt">-->
+    <!--<span id="guan">×</span>-->
+    <!--<form>-->
+        <!--<h4>   用户名：</h4>-->
+    <!--<input type="text" value="请输入用户名或邮箱" id="yhm" class="dlb0" name="name">-->
+    <!--<h4>   密码：</h4>-->
+    <!--<input type="password" placeholder="请输入密码" id="mm" class="dlb0" name="password">-->
+    <!--<a href="#">忘记密码</a>-->
+    <!--<button id="dl"></button>-->
+    <!--</form>-->
+<!--</div>-->
+<!--登录弹出框结束-->
+<!--注册弹出-->
+
+<!--
+<div id="kuang">
+    <form>
+        <span id="guan1">×</span>
+        <h3>邮箱：</h3>
+        <input type="text">
+        <h3>用户名：</h3>
+        <input type="text">
+        <h3>密码：</h3>
+        <input type="text">
+        <button id="zc">确 定</button>
+    </form>
+</div>
+-->
+
+<!--顶部登录注册那一行开始-->
+<div class="shortcut">
+        <div class="fr">
+            <ul>
+                 <li><a href="dlzc/dl.html" id="oA1"> 你好，请登录</a></li>&nbsp;
+                <li class="line"></li>
+                 <li><a href="dlzc/zc.html" id="oA2" > 免费注册</a></li>
+                <li class="line"></li>
+                 <li><a href="#" > 退出账号</a></li>
+            </ul>
+        </div>
+</div>
+<!--顶部登录注册那一行结束-->
+
+<!--第一个搜索框开始-->
+<div class="search w">
+    <form method="post" action="index.php">
+    <input type="text" value="啾一下就知道" id="jiu">
+    <input type="submit" id="bjiu" value="啾一下"> </input>
+    </form>
+</div>
+<!--第一个搜索结束-->
+
+
+<!--第二个框开始-->
+<div class="reci w">
+    <a href="dlzc/hot.html"  id="rc"></a>
+</div>
+
+
+<!--第三个框开始-->
+<div class="wode w" id="san">
+<a href="dlzc/grzx.html" id="myself"></a>
+</div>
+</div>
+</body>
+</html>

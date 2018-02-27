@@ -1,0 +1,440 @@
+@charset "UTF-8";
+body,div,img,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+input,img,button{border:0; outline: none; margin: 0; padding: 0;}
+ul,ol{list-style: none}
+fieldset, img, input,button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+input,button{padding-bottom: 0; padding-top: 0;}
+select,input,button{vertical-align:middle}
+textarea{resize: none;}
+img{border:0; vertical-align: middle;}
+table{border-collapse: collapse;}
+a{color: #000;text-decoration: none;font-size: 15px}
+a:hover{color: #f21e3e}
+.w{
+    width:1200px;
+    margin:0 auto;}
+.fr{
+    float: right;
+}
+body {
+    background: url(../images/back.jpg) repeat;
+    background-position: top center;
+    background-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+#venusLogo p {
+    font-family: 'Montez', cursive;
+    font-size:55px;
+    color:#ffffff;
+    text-shadow: 2px 2px 0 #ca2d1d;
+    margin:15px 0 0 330px;
+    padding-right: 30px;
+    float:left;
+   /* background-image: url(../images/logoLeaf.png);*/
+    background-repeat: no-repeat;
+    background-size: 22px 26px;
+    background-position: right;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+#mainMenuBg {
+  /*  background: url(../images/menubar.png) no-repeat;*/
+    width: 1002px;
+    height: 95px;
+    margin: 0 auto;
+    color:#000;
+}
+
+#mainMenuLeft {
+    float: left;
+    margin-left:100px;
+    margin-top: 20px;
+}
+
+#mainMenuRight {
+    float: right;
+    margin-right:147px;
+    margin-top: 20px;
+}
+
+#mainMenuLeft li, #mainMenuRight li {
+    list-style: none;
+    float:left;
+    font-family: Georgia, "Times New Roman",Times, serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 38px;
+}
+
+#mainMenuLeft li a, #mainMenuRight li a {
+    color: #642424;
+
+}
+
+#mainMenuLeft li a:hover, #mainMenuRight li a:hover {
+    color: #f21e3e;
+}
+
+#mainMenuLeft li a.active, #mainMenuRight li a.active {
+    color: #f21e3e;
+    background-image: url(../images/menuItemActive.png);
+    background-position:  bottom;
+    background-repeat: no-repeat;
+    background-size: 43px 12px;
+    padding-bottom:5px;
+}
+
+/* Dropdown menu */
+
+#mainMenuRight.dropdown li ul, #mainMenuLeft.dropdown li ul {
+    background: #f21e3e;
+    display:none;
+    position: absolute;
+    top: 45px;
+    z-index: 1308;
+    width: 154px;
+    padding:0;
+    margin:0;
+    font-size:13px;
+    /* border radius */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /* box shadow */
+    box-shadow: 0 0 1px #f21e3e;
+}
+
+#mainMenuRight.dropdown li ul li, #mainMenuLeft.dropdown li ul li {
+    float:left;
+    padding: 10px 15px;
+    margin:0;
+    clear:both;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#mainMenuRight.dropdown li ul li.first, #mainMenuLeft.dropdown li ul li.first {
+    background: url(../images/dropdownTriangle.png) 0 top no-repeat;
+    background-size: 154px 6px;
+    margin-top: -6px;
+    padding-top: 20px !important;
+}
+
+#mainMenuRight.dropdown li ul li.last, #mainMenuLeft.dropdown li ul li.last {
+    padding-bottom: 20px !important;
+}
+
+#mainMenuRight.dropdown li ul li a, #mainMenuLeft.dropdown li ul li a {
+    text-transform: none;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#mainMenuRight.dropdown li ul li a:hover, #mainMenuLeft.dropdown li ul li a:hover {
+    color: #f21e3e;
+}
+
+
+/*
+ ***************************************************************************************************
+ **								1.6 QUOTE | PAGETITLE | BREADCRUMBS								  **
+ ***************************************************************************************************
+*/
+
+#headerContainer {
+    position: relative;
+    z-index: 50;
+    height: 215px;
+    margin-bottom:50px;
+}
+
+#QuotePagetitleBreadcrumbsWrapper {
+    width: 960px;
+    margin: 0 auto;
+    position:relative;
+    z-index:-10;
+    top:-100px;
+
+}
+
+#QuotePagetitleContainer {
+    background: #fbfbfb;
+    min-height: 150px;
+    display:block;
+}
+
+#QuotePagetitleContainer p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #642424;
+    text-align: center;
+    padding-top:120px;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+#subtitleBreadcrumbsContainer {
+    background: url(../images/pageTitleQuoteContainerBottomBar.png) repeat-x;
+    height:51px;
+    background-position: bottom;
+    position: relative;
+}
+
+#headerContainer {
+    position: relative;
+    z-index: 50;
+    height: 215px;
+    margin-bottom:50px;
+}
+#QuotePagetitleBreadcrumbsWrapper {
+    width: 960px;
+    margin: 0 auto;
+    position:relative;
+    z-index:-10;
+    top:-100px;
+
+}
+#QuotePagetitleContainer p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #642424;
+    text-align: center;
+    padding-top:120px;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+#grzx p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #f21e3e;
+    text-align: center;
+    padding-top:120px;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+/*导航开始*/
+#nav{
+    width: 960px;
+    height: 20px;
+    border-top: 1px solid #f21e3e;
+}
+#nav1{
+    /*width: 85px;
+    height: 30px;*/
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    margin-top: 2px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+#nav2{
+    /*width: 85px;
+    height: 30px;*/
+    position: absolute;
+    top: 5px;
+    left: 320px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+#nav3{
+    /*width: 85px;
+    height: 30px;*/
+    position: absolute;
+    top: 5px;
+    left: 590px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+#nav4{
+    /*width: 85px;
+    height: 30px;*/
+    position: absolute;
+    top: 5px;
+    left: 790px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+#nav a{
+    font-size: 20px;
+    color: #642424;
+    font-weight: 800;
+}
+
+/*导航结束*/
+
+/*内容部分开始*/
+
+/*第一部分我的问题开始*/
+/*#myq{
+    margin:5px auto 10px;
+    width: 945px;
+    background-color:  #fbfbfb;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+}
+.myq{
+    padding: 2px 0 4px 0;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #3c3c3c;
+}
+.myq p{
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+.myq a{
+    height: 20px;
+    display: block;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-align: right;
+    font-size: 15px;
+}*/
+/*我的问题结束*/
+
+
+/*我的回答开始*/
+
+/*#mya{
+    margin:5px auto 10px;
+    width: 945px;
+    background-color:  #fbfbfb;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+    display: none;
+}
+.mya{
+    padding: 2px 0 4px 0;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #3c3c3c;
+}
+.mya p{
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+.mya a{
+    height: 20px;
+    display: block;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-align: right;
+    font-size: 15px;
+}*/
+/*
+我的回答结束*/
+
+
+/*我的积分开始*/
+/*
+#jifen{
+    margin:5px auto 10px;
+    width: 945px;
+    background-color:  #fbfbfb;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+    display:none;
+}
+#all{
+    padding: 10px 0 10px 0;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    margin-bottom: 10px;
+}
+#ih{
+    height: 60px;
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+#all h3{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 25px;
+    color: #000;
+}
+.jifen{
+    height: 35px;
+    position: relative;
+    border-bottom: 1px solid #8c8c8c;
+    padding-top: 5px;
+}
+.jifen h2{
+    color: #000;
+}
+.jifen img{
+    position: absolute;
+    top:2px;
+    left: 630px;
+}*/
+#p1{
+    text-align: center;
+    color: #e5e5e5;
+    font-size: 15px;
+}
+
+
+
+
+
+#zl h1{
+    text-align: center;
+    color: #642424;
+    font-weight: 800;
+}
+
+#zl{
+    width: 955px;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    position: relative;
+    padding: 15px;
+}
+#yhm h2{
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+}
+#hm{
+    border-radius: 5px;
+    border: 1.5px solid #000000;
+    padding-left: 10px;
+    margin-left: 100px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: -37px;
+}
+#bj{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 850px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px;
+}

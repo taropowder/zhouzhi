@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block root %}
+<form action="/change" method="POST">
+    {{ result }}
+    请输入原来密码<input type="text" name="old_password"><br>
+    请输入新密码<input type="text" name="password"><br>
+    <input type="submit" value="修改">
+    {% csrf_token %}
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="251a561a-593d-41e3-9981-4b4ae8148d62" name="ubuntu-yy" url="http://123.206.74.236:8000">
+        <fileTransfer host="123.206.74.236" port="22" rootFolder="/soft/zhouzhi" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="3f22313a-5f55-4f5b-b64c-3c27ab842777" name="ubuntu" url="http://118.89.217.235:8000">
+        <fileTransfer host="118.89.217.235" port="22" rootFolder="/code/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

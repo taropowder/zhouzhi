@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body,div,img,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+input,img,button{border:0; outline: none; margin: 0; padding: 0;}
+ul,ol{list-style: none}
+fieldset, img, input,button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+input,button{padding-bottom: 0; padding-top: 0;}
+select,input,button{vertical-align:middle}
+textarea{resize: none;}
+img{border:0; vertical-align: middle;}
+table{border-collapse: collapse;}
+a{color: #666;text-decoration: none}
+h4{color: #b1191a}
+#page1{
+    width: 100%;
+    height: 100%;
+}
+#kuang{
+    background: url("../images/div.png")no-repeat bottom right;
+   /* background-color: #cccccc;*/
+    width: 315px;
+    height: 390px;
+    margin:40px auto;
+    padding-top: 30px;
+    padding-left:120px;
+    display: block;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+}
+#kuang  h2{
+    color: #f21e3e;
+    line-height: 20px;
+    font-size: 40px;
+}
+#kuang span{;
+    color: #f21e3e;
+    font-family: 宋体;
+    font-size: 15px;
+}
+#kuang h3{
+    color: #fff;
+    font-size: 20px;
+    font-family: 微软雅黑;
+}
+#kuang input{
+    /*background: url("../images/zhuhcekuang.png");*/
+    width: 175px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 9px 0 9px 0;
+    display: block;
+}
+#kuang #zc{
+    /*background: url("../images/zhuce.png");*/
+    width: 121px;
+    height: 28px;
+    border: 1.5px solid #fff;
+    border-radius: 8px;
+    background-color: #cccccc;
+    cursor: pointer;
+    margin-top: 29px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% if name %}
+<h1>hello   {{ name }}</h1>
+{% endif %}
+    <meta charset="UTF-8">
+    <title>博客列表</title>
+</head>
+<body>
+    <h2>博客列表</h2>
+    <a href="/add" >添加</a>
+    {% for article in articles %}
+<div>
+    <h3>
+        标题:<a href="/view/{{ article.id }}">{{ article.title }}</a>
+    </h3>
+    {{ article.content }}
+</div>
+<hr>
+{% endfor %}
+</body>
+</html>

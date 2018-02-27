@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>周知</title>
+    <script>
+{#        if(!IsPC()){#}
+{#            window.location = "mobile/mm.html";#}
+{#        }#}
+{#        function IsPC() {//判断是否是PC#}
+{##}
+{#            var userAgentInfo = navigator.userAgent;#}
+{#            var Agents = ["Android", "iPhone",#}
+{#                "SymbianOS", "Windows Phone",#}
+{#                "iPad", "iPod"];#}
+{#            var flag = true;#}
+{#            for (var v = 0; v < Agents.length; v++) {#}
+{#                if (userAgentInfo.indexOf(Agents[v]) > 0) {#}
+{#                    flag = false;#}
+{#                    break;#}
+{#                }#}
+{#            }#}
+{#            return flag;#}
+{#        }#}
+    </script>
+    <link rel="stylesheet" href="/static/basic.css" type="text/css">
+    <link rel="shortcut icon" href="/static/00.ico">
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/static/my.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+	<script type="text/javascript" src="/static/star/js/jquery-stars.js"></script>
+	<script type="text/javascript" src="/static/star/js/smothscrool.js"></script>
+	<script type="text/javascript" src="/static/star/js/jquery.main.js"></script>
+</head>
+<div class="big" >
+<body  id="custom">
+<img src="/static/images/nw.jpg" width="100%" height="1000px" style="position:absolute;left:0;top:0;z-index:-1">
+
+<!--顶部登录注册那一行开始-->
+<div class="shortcut">
+        <div class="fr">
+            <ul>
+                {% if name %}
+                 <li><a id="oA1"> 你好，{{ name }}</a></li>&nbsp;
+                <li><a href="/logout" > 退出账号</a></li>
+                {% else %}
+                <li class="line"></li>
+                    <li><a href="/login" id="oA1"> 你好，请登录</a></li>&nbsp;
+                 <li><a href="/register" id="oA2" > 免费注册</a></li>
+                <li class="line"></li>
+                {% endif %}
+
+            </ul>
+        </div>
+</div>
+<!--顶部登录注册那一行结束-->
+
+<!--第一个搜索框开始-->
+<div class="search w">
+    <form method="post" action="/search">
+    <input type="text" value="啾一下就知道" id="jiu" name="search">
+         {% csrf_token %}
+    <input type="submit" id="bjiu" value="啾一下"> </input>
+    </form>
+</div>
+<!--第一个搜索结束-->
+
+
+<!--第二个框开始-->
+<div class="reci w">
+    <a href="/hot"  id="rc"></a>
+</div>
+
+
+<!--第三个框开始-->
+{% if name %}
+<div class="wode w" id="san">
+<a href="persioncenter" id="myself"></a>
+</div>
+{% endif %}
+</div>
+</body>
+</html>

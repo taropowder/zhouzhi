@@ -1,0 +1,38 @@
+
+{% extends 'persion_base.html' %}
+
+{% block root %}
+<div id="myq">
+    <!--总金币开始-->
+    <div id="all">
+        <div id="ih">
+        <img src="/static/dlzc/images/jb.png" style="width: 60px;height: 60px">
+        <h3>我的Z币：{% for list in integral %} {% for l in list  %}{{ l }}{% endfor %}{% endfor %}</h3>
+        </div>
+    </div>
+ {% for question_time in questions %}
+    <div class="jifen">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{ question_time }}提出问题  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;+10</h2>
+        <img src="/static/dlzc/images/jjj.png" style="width: 30px;height: 30px">
+    </div>
+
+{% endfor %}
+ {% for answer_time in answers %}
+    <div class="jifen">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{ answer_time }}回答问题  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;+7</h2>
+        <img src="/static/dlzc/images/jjj.png" style="width: 30px;height: 30px">
+    </div>
+
+{% endfor %}
+
+
+</div>
+{% endblock %}
