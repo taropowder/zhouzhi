@@ -177,7 +177,6 @@ def perion_anwser(request):
     return render(request, 'persion_anwser.html', context)
 def answer(request,questions_id):
     context = {}
-    context['name'] = request.session['name']
     # questions_id=request.GET.get('question_id')
     if questions_id=='None' :
         context['answers']="没有数据"
